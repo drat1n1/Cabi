@@ -1,0 +1,325 @@
+@import url(reset.css);
+@import url("https://webfontworld.github.io/gmarket/GmarketSans.css");
+@import url("https://webfontworld.github.io/SCoreDream/SCoreDream.css");
+@import url("https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap");
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(path/to/MaterialIcons-Regular.eot);
+  src: local("Material Icons"), local("MaterialIcons-Regular"),
+    url(path/to/MaterialIcons-Regular.woff2) format("woff2"),
+    url(path/to/MaterialIcons-Regular.woff) format("woff"),
+    url(path/to/MaterialIcons-Regular.ttf) format("truetype");
+}
+
+:root {
+  /* gmarket 폰트 제외 body3_tt값과 동일 */
+  --Gmaket_Sans: 'Gmarket Sans';
+  /* 에스코어드림 재로드 */
+  --Score_dream: 'SCoreDream';  
+  --Qwitcher_Grypen: 'Qwitcher Grypen';
+  --font_size: 20px;
+  --font_weight: lighter;
+  --line_height: 30px; 
+  /* sm_pd 기준 */
+  --padding: 30px;
+
+  /* color */
+  --white: #ffffff;
+  --light_g1: #dfdfdf;
+  --light_g2: #c1c1c1;
+  --light_g3: #8b8b8b;
+  --light_g4: #6f6f6f;
+  --light_g5: #555555;
+  --light_g6: #242424;
+  --black: #000000;
+  --main_color: #0069ff;
+  --sub_color1: #e1f8ff;
+  --sub_color2: #00c2ff;
+  --sub_color3: #2e139a;
+  --point_color: #22ffff;
+  --error_color: #eb683f;
+  --delete_color: #df1d1d;
+  --Point-Neon: #00eaff;
+}
+
+.white {
+  color: var(--white);
+}
+.light_g1 {
+  color: var(--light_g1);
+}
+.light_g2 {
+  color: var(--light_g2);
+}
+.light_g3 {
+  color: var(--light_g3);
+}
+.light_g4 {
+  color: var(--light_g4);
+}
+.light_g5 {
+  color: var(--light_g5);
+}
+.light_g6 {
+  color: var(--light_g6);
+}
+.black {
+  color: var(--black);
+}
+.main_color {
+  color: var(--main_color);
+}
+.sub_color1 {
+  color: var(--sub_color1);
+}
+.sub_color2 {
+  color: var(--sub_color2);
+}
+.sub_color3 {
+  color: var(--sub_color3);
+}
+.point_color {
+  color: var(--point_color);
+}
+.error_color {
+  color: var(--error_color);
+}
+.delete_color {
+  color: var(--delete_color);
+}
+.white_bg {
+  background: var(--white);
+}
+.light_g1_bg {
+  background: var(--light_g1);
+}
+.light_g2_bg {
+  background: var(--light_g2);
+}
+.light_g3_bg {
+  background: var(--light_g3);
+}
+.light_g4_bg {
+  background: var(--light_g4);
+}
+.light_g5_bg {
+  background: var(--light_g5);
+}
+.light_g6_bg {
+  background: var(--light_g6);
+}
+.black_bg {
+  background: var(--black);
+}
+.main_color_bg {
+  background: var(--main_color);
+}
+.sub_color1_bg {
+  background: var(--sub_color1);
+}
+.sub_color2_bg {
+  background: var(--sub_color2);
+}
+.sub_color3_bg {
+  background: var(--sub_color3);
+}
+.point_color_bg {
+  background: var(--point_color);
+}
+.error_color_bg {
+  background: var(--error_color);
+}
+.delete_color_bg {
+  background: var(--delete_color);
+}
+.delete_color_bg {
+  background: var(--delete_color);
+}
+.Point-Neon_color {
+  color: var(--Point-Neon);
+}
+.Point-Neon_bg {
+  background: var(--Point-Neon);
+}
+
+/* layout */
+
+.container {
+  width: 1320px;
+  margin: 0 auto;
+}
+p,
+span {
+  font-family: var(--Score_dream);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--Gmaket_Sans);
+}
+
+.header1_tt {
+  font-size: calc(var(--font_size) * 3.25);
+  font-weight: bold;
+  line-height: calc(var(--line_height) * 3);
+  letter-spacing: -3.25px;
+}
+.header2_tt {
+  font-size: calc(var(--font_size) * 3);
+  font-weight: bold;
+  line-height: calc(var(--line_height) * 3);
+  letter-spacing: -3px;
+}
+.header3_tt {
+  font-size: calc(var(--font_size) * 2.6);
+  font-weight: bold;
+  line-height: calc(var(--line_height) * 2.6);
+  letter-spacing: -2.6px;
+}
+.sub_title_tt {
+  font-size: calc(var(--font_size) * 1.75);
+  font-weight: bold;
+  line-height: calc(var(--line_height) * 1.6);
+}
+.sub_title2_tt {
+  font-size: calc(var(--font_size) * 1.5);
+  font-weight: normal;
+  line-height: calc(var(--line_height) * 1.6);
+}
+.body1_tt {
+  font-size: calc(var(--font_size) * 1.5);
+  font-weight: lighter;
+  line-height: calc(var(--line_height) * 1.6);
+}
+.body2_tt {
+  font-size: calc(var(--font_size) * 1.25);
+  font-weight: lighter;
+  line-height: calc(var(--line_height) * 1.4);
+}
+.body3_tt {
+  font-size: var(--font_size);
+  font-weight: lighter;
+  line-height: var(--line_height);
+}
+
+.p1_tt {
+  font-size: var(--font_size);
+  font-weight: normal;
+  line-height: calc(var(--line_height) * 1.4);
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+.p2_tt {
+  font-size: var(--font_size);
+  font-weight: lighter;
+  line-height: calc(var(--line_height) * 1.4);
+  letter-spacing: -1px;
+}
+.p3_tt {
+  font-size: calc(var(--font_size) * 0.9);
+  font-weight: lighter;
+  line-height: calc(var(--line_height) * 1.2);
+  letter-spacing: -0.9px;
+}
+.p4_tt {
+  font-size: calc(var(--font_size) * 0.8);
+  font-weight: lighter;
+  line-height: calc(var(--line_height) * 1.12);
+  letter-spacing: -0.8px;
+}
+.p5_tt {
+  font-size: calc(var(--font_size) * 0.7);
+  font-weight: lighter;
+  line-height: calc(var(--line_height) * 0.88);
+  letter-spacing: -0.7px;
+}
+
+.detail_tt {
+  font-size: var(--font_size) * 0.8;
+  font-weight: bold;
+  line-height: var(--line_height);
+}
+
+.special_tt {
+  font-family: var(--Qwitcher_Grypen);
+  font-size: var(--font_size) * 15;
+  font-weight: bold;
+  line-height: calc(var(--line_height) * 3.6);
+}
+
+.special_s_t {
+  font-family: var(--Qwitcher_Grypen);
+  font-size: var(--font_size) * 4;
+  font-weight: bold;
+  line-height: calc(var(--line_height) * 3.6);
+}
+
+/* padding */
+.big_pd {
+  padding-bottom: calc(var(--padding) * 5);
+}
+.m_pd {
+  padding-bottom: calc(var(--padding) * 3);
+}
+.sm_pd {
+  padding-bottom: var(--padding);
+}
+.cf:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* typography */
+body {
+  font:100 var(--font_size)/calc(var(--font_size)*1.25) var(--Score-dream) 'SCoreDream' 
+}
+
+/* link button */
+.btn {
+  width: 216px;
+  line-height: calc(var(--line_height) * 1.44);
+  border-radius: 38px;
+  text-align: center;
+}
+/* form */
+.form {
+  width: 207px;
+  line-height: calc(var(--line_height) * 1.64);
+  border: 1px solid #e3e3e3;
+  background: var(--white);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+/*  */
+.material-symbols-outlined {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}

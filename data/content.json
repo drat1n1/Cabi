@@ -1,0 +1,176 @@
+[
+    {
+        "title": "마드리드",
+        "type": "푸드코트",
+        "image": "https://ifh.cc/g/k6FGQS.jpg",
+        "foodAll": "foodAll"
+    },
+    {
+        "title": "라꼬스타",
+        "type": "레스토랑",
+        "image": "https://ifh.cc/g/sX31go.jpg",
+        "foodAll": "foodAll"
+    },
+    {
+        "title": "비치사이드바",
+        "type": "레스토랑",
+        "image": "https://ifh.cc/g/4tgA02.jpg",
+        "foodAll": "foodAll"
+    },
+    {
+        "title": "폴바셋",
+        "type": "카페",
+        "image": "https://ifh.cc/g/PY4vCX.jpg",
+        "foodAll": "foodAll"
+    },
+    {
+        "title": "하버마스터",
+        "type": "레스토랑",
+        "image": "https://ifh.cc/g/dbDDAw.jpg",
+        "foodAll": "foodAll"
+    },
+    {
+        "title": "하버 스낵",
+        "type": "푸드코트",
+        "image": "https://ifh.cc/g/VnNx8A.jpg",
+        "foodAll": "foodAll"
+    },
+    {
+        "title": "버거카페 갤리언",
+        "type": "푸드코트",
+        "image": "https://ifh.cc/g/yr9pC4.jpg",
+        "foodAll": "foodAll"
+    },
+    {
+        "title": "피에스타",
+        "type": "푸드코트",
+        "image": "https://ifh.cc/g/hyWoSw.jpg",
+        "foodAll": "foodAll"
+    },
+    {
+        "title": "산후앙",
+        "type": "레스토랑",
+        "image": "https://ifh.cc/g/5CoAcX.jpg",
+        "foodAll": "foodAll"
+    },
+    {
+        "title": "락카 카트",
+        "type": "푸드코트",
+        "image": "https://ifh.cc/g/PToQyT.jpg",
+        "foodAll": "foodAll"
+    },
+    {
+        "title": "멜팅소울",
+        "type": "씨웨이브",
+        "image": "https://ifh.cc/g/LxGQHT.jpg",
+        "foodAll": "foodAll"
+    },
+    {
+        "title": "스파 빌리지",
+        "type": "아쿠아틱센터",
+        "image": "https://ifh.cc/g/om1Hbd.jpg",
+        "villageAll": "villageAll"
+    },
+    {
+        "title": "아쿠아틱 카바나",
+        "type": "아쿠아틱센터",
+        "image": "https://ifh.cc/g/QKCB3d.jpg",
+        "villageAll": "villageAll"
+    },
+    {
+        "title": "웨이브 빌리지",
+        "type": "씨웨이브",
+        "image": "https://ifh.cc/g/zSb0tM.jpg",
+        "villageAll": "villageAll"
+    },
+    {
+        "title": "캐슬 빌리지",
+        "type": "포트리스",
+        "image": "https://ifh.cc/g/rgAk0x.jpg",
+        "villageAll": "villageAll"
+    },
+    {
+        "title": "리버웨이 데이베드",
+        "type": "포트리스",
+        "image": "https://ifh.cc/g/Ra0pzG.jpg",
+        "villageAll": "villageAll"
+    },
+    {
+        "title": "카바나 빌리지",
+        "type": "포트리스",
+        "image": "https://ifh.cc/g/BFG63w.jpg",
+        "villageAll": "villageAll"
+    },
+    {
+        "title": "산후앙 빌리지",
+        "type": "와일드리버",
+        "image": "https://ifh.cc/g/yLjtd9.jpg",
+        "villageAll": "villageAll"
+    },
+    {
+        "title": "슬라이드 빌리지",
+        "type": "베이 슬라이드",
+        "image": "https://ifh.cc/g/sX31go.jpg",
+        "villageAll": "villageAll"
+    },
+    {
+        "title": "키디 빌리지",
+        "type": "와일드리버",
+        "image": "https://ifh.cc/g/cVfJds.jpg",
+        "villageAll": "villageAll"
+    },
+    {
+        "title": "어드벤처 빌리지",
+        "type": "포트리스",
+        "image": "https://ifh.cc/g/15QMdb.jpg",
+        "villageAll": "villageAll"
+    },
+    {
+        "title": "서핑 빌리지",
+        "type": "포트리스",
+        "image": "https://ifh.cc/g/OkM7kK.jpg",
+        "villageAll": "villageAll"
+    },
+    {
+        "title": "래프트 빌리지",
+        "type": "와일드리버",
+        "image": "https://ifh.cc/g/V1QJZQ.jpg",
+        "villageAll": "villageAll"
+    },
+    {
+        "title": "타워 빌리지",
+        "type": "와일드리버",
+        "image": "https://ifh.cc/g/dYyk7y.jpg",
+        "villageAll": "villageAll"
+    },
+    {
+        "title": "아쿠아틱 데이베드",
+        "type": "아쿠아틱센터",
+        "image": "https://ifh.cc/g/cjNZcK.jpg",
+        "villageAll": "villageAll"
+    },
+    {
+        "title": "와일드 데이베드",
+        "type": "와일드리버",
+        "image": "https://ifh.cc/g/TDTxSD.jpg",
+        "villageAll": "villageAll"
+    },
+    {
+        "title": "릴렉스 데이베드",
+        "type": "아쿠아틱센터",
+        "image": "https://ifh.cc/g/sX31go.jpg",
+        "villageAll": "villageAll"
+    },
+    {
+        "title": "나비오",
+        "type": "선물숍",
+        "image": "https://ifh.cc/g/jpQ3Vn.jpg",
+        "giftAll": "giftAll"
+    },
+    {
+        "title": "마카도",
+        "type": "선물숍",
+        "image": "https://ifh.cc/g/CsgfM2.jpg",
+        "giftAll": "giftAll"
+    }
+]
