@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <link rel="stylesheet" href="../../../css/reset.css">
+  <link rel="stylesheet" href="../../../css/common.css">
+  <link rel="stylesheet" href="../css/service.css">  
+  
+  <title>캐리비안베이</title>  
+</head>
+<body>    
+<header></header>
+</header>
+<main>
+  <section class="video_screen">
+    <div></div>
+  </section>
+
+
+
+  <div class="action-bar d-flex justify-content-between align-items-center">
+
+    <!-- 브래드크럼 -->
+    <div class="breadcrumb d-flex align-items-center  container">
+      <ul>
+        <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+        <li><a href="#">카테고리</a></li>
+        <li><a href="#">이용정보</a></li>
+        <li>편의시설</li>
+      </ul>
+    </div>
+
+
+    <!-- 공유,인쇄 버튼 -->
+
+    <div class="button_area d-flex flex-row">
+
+      <!-- 공유하기  -->
+
+      <div class="share">
+        <div>
+          <button id="copyButton" type="button" class="image-button">
+            <img src="../img/share.png" alt="공유하기 버튼">
+          </button>
+
+          <!-- JavaScript -->
+
+          <script>
+            const copyButton = document.getElementById("copyButton");
+
+            copyButton.addEventListener("click", () => {
+              // 현재 페이지의 URL 가져오기
+              const currentPageURL = window.location.href;
+
+              // 임시 input 요소를 만들어 URL 복사
+              const tempInput = document.createElement("input");
+              tempInput.value = currentPageURL;
+              document.body.appendChild(tempInput);
+              tempInput.select();
+              document.execCommand("copy");
+              document.body.removeChild(tempInput);
+
+              // 복사 완료 메시지 또는 상태 표시
+              alert("현재 페이지의 링크가 복사되었습니다.");
+            });
+          </script>
+        </div>
+
+      </div>
+
+      <!-- 인쇄하기 버튼 -->
+      <div class="print">
+        <button id="printButton" type="button" class="image-button">
+          <img src="../img/print.png" alt="이미지">
+        </button>
+
+
+        <script>
+          const printButton = document.getElementById("printButton");
+
+          printButton.addEventListener("click", () => {
+            // 페이지 인쇄
+            window.print();
+          });
+        </script>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<section class="container text-center">
+      
+<div class="free m_pd">
+  <p class="sub_title2_tt">#캐비 #몸만와도 돼</p>
+  <h2 class="header2_tt">편의시설</h2> 
+</div>
+      
+<div class="tab_nav d-flex position-relative">
+  <ul class="tab d-flex justify-content-between">
+    <li class="detail_tt"><a href="#tab_a" class="active">물품 보관소</a></li>
+    <li class="detail_tt"><a href="#tab_b">베이비 서비스</a></li>
+    <li class="detail_tt"><a href="#tab_c">의무실</a></li>	
+    <li class="detail_tt"><a href="#tab_c">ATM 기기</a></li>	
+    <li class="detail_tt"><a href="#tab_d">대여소</a></li>	
+    <li class="detail_tt"><a href="#tab_e">흡연실</a></li>	
+  </ul>
+  <span class="color position-absolute"></span>
+</div>
+
+      
+  <ul class="convenient big_pd">
+
+    <li class="tab1">
+      <div class="fl d-flex">
+        <div class="img_list">
+          <img src="../img/tab_img_a.png" alt="">
+        </div>
+        <div class="text_list d-flex flex-column justify-content-center">
+          <h2 class="sub_title_tt sm_pd">물품 보관소</h2>
+          <p class="p1_tt">수질 오염 및 안전을 위하여 음식물, 돗자리, 의자류, 스노클 장비,다이버마스크, 오리발, 대형 물놀이 기구 유리 소재의모든 제품 등은 입장전에 보관해 주세요.</p>
+          <button><a href="">보러가기</a></button>
+        </div>
+      </div>
+    </li>	
+
+    
+    <li class="tab2">
+      <div class="fl d-flex">
+        <div class="img_list">
+          <img src="../img/tab_img_b.png" alt="">
+        </div>
+        <div class="text_list d-flex flex-column justify-content-center">
+          <h2 class="sub_title_tt sm_pd">베이비 서비스</h2>
+          <p class="p1_tt">아쿠아틱 센터 4층 <br>영·유아 수면실(신장 100cm미만 이용가능), 수유실, 기저귀 교환 등 반드시 보호자가 함께 계셔야 합니다</p>
+          <button><a href="">보러가기</a></button>
+        </div>
+      </div>
+    </li>	
+
+
+    <li class="tab3">
+      <div class="fl d-flex">
+        <div class="img_list">
+          <img src="../img/tab_img_c.png" alt="">
+        </div>
+        <div class="text_list d-flex flex-column justify-content-center">
+          <h2 class="sub_title_tt sm_pd align-self-center">의무실</h2>
+          <p class="p1_tt">아쿠아틱 센터 "등대 의무실"</p>
+          <p class="p1_tt">031-xxx-xxxx</p>
+          <button><a href="">보러가기</a></button>
+        </div>
+      </div>
+    </li>	
+
+
+    <li class="tab4">
+     <div class="fl d-flex">
+        <div class="img_list">
+          <img src="../img/tab_img_d.png" alt="">
+        </div>
+        <div class="text_list d-flex flex-column justify-content-center">
+          <h2 class="sub_title_tt sm_pd">ATM 기기</h2>
+          <p class="p1_tt">입장 전 : 등대 매표소 안</p>
+          <p class="p1_tt">캐리비안 베이 이용시 베이코인으로 대체 가능합니다</p>
+          <button><a href="">보러가기</a></button>
+        </div>
+     </div>
+    </li>	
+
+
+    <li class="tab5">
+      <div class="fl d-flex">
+        <div class="img_list">
+          <img src="../img/tab_img_e.png" alt="">
+        </div>
+        <div class="text_list d-flex flex-column justify-content-center">
+          <h2 class="sub_title_tt sm_pd">대여소</h2>
+          <p class="p1_tt">PC, 모바일 스마트 예약을 통해 사전 예약 가능하며, 방문일에는 잔여분에 한해 현장 대여 가능합니다.</p>
+          <button><a href="">보러가기</a></button>
+        </div>
+      </div>
+    </li>	
+
+
+    <li class="tab6">
+      <div class="fl d-flex">
+        <div class="img_list">
+          <img src="../img/tab_img_f.png" alt="">
+        </div>
+        <div class="text_list d-flex flex-column justify-content-center">
+          <h2 class="sub_title_tt sm_pd">흡연실</h2>
+          <p class="p1_tt">캐리비안 베이는 간접흡연 및 화재위험의 피해로부터 보호하기 위하여 금연파크로 지정되어 있습니다.</p>
+          <p class="p1_tt">위반 시 국민건강증진법에 의하여 5만원의 과태료가 부과되오니 흡연을 원하시는 손님께서는 지정된 흡연장소를 이용해 주세요.</p>
+          <button><a href="">보러가기</a></button>
+        </div>
+      </div>
+    </li>	
+
+  </ul>
+  
+      
+  
+</section>
+         
+      <section class="service container big_pd">
+        <div class="title m_pd">
+          <p class="sub_title2_tt">#캐비 #서비스</p>
+          <h2 class="header2_tt">대여 서비스</h2> 
+        </div>
+      
+      
+          <div class="list d-flex justify-content-between">
+           
+            <div class="service_item_1 position-relative">
+              <a href=""><img src="../img/service_a.png" alt=""></a>
+            <div class="text">
+              <h3>빌리지 대여</h3>
+              <p>스파빌리지, 아쿠아틱 카바나는 4층 샌디에서 예약 및 확인 가능합니다.</p>
+            </div>
+            </div>
+
+            <div class="service_item_2 position-relative">
+              <a href=""><img src="../img/service_b.png" alt=""></a>
+              <div class="text position-absolute">
+                <h3>타월</h3>
+                <p>캐스트에서 대여 가능합니다. 수영복은 3층에서 구입 가능합니다.</p>
+              </div>
+            </div>
+
+            <div class="service_item_3 position-relative">
+              <a href=""><img src="../img/service_c.png" alt=""></a>
+              <div class="text position-absolute">
+                <h3>튜브대여</h3>
+                <p>5층락커 출구대여소 <br>공기주입기가 설치되어 있습니다.</p>
+              </div>
+            </div>
+
+            <div class="service_item_4 position-relative">
+              <a href=""><img src="../img/service_d.png" alt=""></a>
+              <div class="text position-absolute">
+                <h3>비치체어</h3>
+                <p>PC, 모바일 스마트 예약 가능하며, 현장도 대여 가능합니다.</p>
+              </div>
+            </div>
+
+          </div>
+      </section>
+      
+       
+</main>
+<footer></footer>
+<script src="../js/service.js"></script>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="../css/price.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="/css/common.css">
+
+  <title>가격안내</title>
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <div class="top_background"></div>
+
+
+    <div class="price_wrapper">
+
+      <!-- 액션바 -->
+
+      <div class="action-bar d-flex justify-content-between align-items-center">
+
+        <!-- 브래드크럼 -->
+        <div class="breadcrumb d-flex align-items-center container">
+          <ul>
+            <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="#">카테고리</a></li>
+            <li><a href="#">요금프로모션</a></li>
+            <li>이용요금</li>
+          </ul>
+        </div>
+
+
+        <!-- 공유,인쇄 버튼 -->
+
+        <div class="button_area d-flex flex-row">
+
+          <!-- 공유하기  -->
+
+          <div class="share">
+            <div>
+              <button id="copyButton" type="button" class="image-button">
+                <img src="Sub/my/image/111.png" alt="공유하기 버튼">
+              </button>
+
+              <!-- JavaScript -->
+
+              <script>
+                const copyButton = document.getElementById("copyButton");
+
+                copyButton.addEventListener("click", () => {
+                  // 현재 페이지의 URL 가져오기
+                  const currentPageURL = window.location.href;
+
+                  // 임시 input 요소를 만들어 URL 복사
+                  const tempInput = document.createElement("input");
+                  tempInput.value = currentPageURL;
+                  document.body.appendChild(tempInput);
+                  tempInput.select();
+                  document.execCommand("copy");
+                  document.body.removeChild(tempInput);
+
+                  // 복사 완료 메시지 또는 상태 표시
+                  alert("현재 페이지의 링크가 복사되었습니다.");
+                });
+              </script>
+            </div>
+
+          </div>
+
+          <!-- 인쇄하기 버튼 -->
+          <div class="print">
+            <button id="printButton" type="button" class="image-button">
+              <img src="Sub/my/image/111.png" alt="이미지">
+            </button>
+
+
+            <script>
+              const printButton = document.getElementById("printButton");
+
+              printButton.addEventListener("click", () => {
+                // 페이지 인쇄
+                window.print();
+              });
+            </script>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- tab menu -->
+
+      <div class="d-flex justify-content-center">
+        <div class="tab-item align-content-center">
+          <div class="tab-button " data-target="part1">입장권</div>
+          <div class="tab-button " data-target="part2">대여요금</div>
+          <div class="tab-button " data-target="part3">빌리지대여</div>
+        </div>
+
+        <div class="price_container p-5 flex-grow-1">
+          <div class="price_sub_title  ">Caribbean Bay Price Guide</div>
+          <div class="price_title d-flex ">
+            <h1 class="header3_tt">캐리비안베이 <h1 class="samll_tt">&nbsp가격안내</h1>
+            </h1>
+          </div>
+
+          <!-- <td colspan="2"></td>
+            <td rowspan="2"></td> -->
+
+          <div class="table part1 p4_tt ">
+            <h2 class="body3_tt">1. 입장권 </h2>
+            <table>
+              <thead>
+                <tr>
+                  <th rowspan="2">종류</th>
+                  <th colspan="2">주간권(종일)</th>
+                  <th colspan="2">오후권(14:30)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2">골드시즌 (7/3 ~ 8/20)</td>
+                  <td>대인</td>
+                  <td>소인/경로</td>
+                  <td>대인</td>
+                  <td>소인/경로</td>
+                </tr>
+                <tr>
+                  <td>79000원</td>
+                  <td>63000원</td>
+                  <td>69000원</td>
+                  <td>53000원</td>
+                </tr>
+
+              </tbody>
+            </table>
+
+            <p>
+              손님이 많을 경우 쾌적한 이용을 위한 ‘입장 제한’으로 바로 입장하지 못 할 수 있습니다.</p>
+
+          </div>
+          <div class="table part2">
+            <h2 class="body2_tt">2.대여요금</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="2">종류</th>
+                  <th>이용요금</th>
+                  <th>대여료</th>
+                  <th>보증금</th>
+                  <th>종류</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="2">자켓</td>
+                  <td>8000원</td>
+                  <td>8000원</td>
+                  <td>-</td>
+                  <td>-</td>
+
+                </tr>
+                <tr>
+                  <td>락커</td>
+                  <td>실외 웨이브</td>
+                  <td>5000원</td>
+                  <td>5000원</td>
+                  <td>-</td>
+                  <td>-</td>
+
+                </tr>
+                <tr>
+                  <td rowspan="2">타월</td>
+                  <td>대형</td>
+                  <td>8000원</td>
+                  <td>5000원</td>
+                  <td>3000원</td>
+                  <td>-</td>
+                </tr>
+                <tr class="bg">
+                  <td>중형</td>
+                  <td>4000원</td>
+                  <td>2000원</td>
+                  <td>2000원</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">비치 체어</td>
+                  <td>미니형</td>
+                  <td>28000원</td>
+                  <td>28000원</td>
+                  <td>-</td>
+                  <td rowspan="3">체어 대여료 오후권 <br>13시부터 적용<br>(미니형 22000원 /<br>고급형 26000 <br> 커플형 63000)</td>
+                </tr>
+                <tr>
+                  <td>고급형</td>
+                  <td>33000</td>
+                  <td>33000</td>
+                  <td>-</td>
+
+                </tr>
+                <tr>
+                  <td>커플형</td>
+                  <td>73000</td>
+                  <td>73000</td>
+                  <td>73000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table part3">
+            <h2 class="body1_tt">3.빌리지대여</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>빌리지명</th>
+                  <th>평일(종일/오후)</th>
+                  <th>휴일(종일/오후)</th>
+                  <th>예약확인 및 대여장소</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>스파</td>
+                  <td>410000원</td>
+                  <td>250000원</td>
+                  <td rowspan="3">샌디대여소(실내)</td>
+                </tr>
+                <tr>
+                  <td>아쿠아틱 빌리지 A타입</td>
+                  <td>260000원</td>
+                  <td>170000원</td>
+                </tr>
+                <tr>
+                  <td>아쿠아틱 빌리지 B타입</td>
+                  <td>210000원</td>
+                  <td>130000원</td>
+                </tr>
+                <tr>
+                  <td>카바나 빌리지</td>
+                  <td rowspan="2">200000원</td>
+                  <td rowspan="2">120000원</td>
+                  <td rowspan="2">실내대여소</td>
+                </tr>
+                <tr>
+                  <td>캐슬 빌리지</td>
+                </tr>
+                <tr>
+                  <td>아쿠아틱 데이베드</td>
+                  <td rowspan="4">130000원</td>
+                  <td rowspan="4">90000원</td>
+                  <td rowspan="2">샌디대여소(실내)</td>
+                </tr>
+                <tr>
+                  <td>릴렉스룸 데이베드</td>
+                </tr>
+                <tr>
+                  <td>리버웨이 데이베드</td>
+                  <td rowspan="10">실외대여소</td>
+                </tr>
+                <td>야외파도풀 데이베드</td>
+
+
+                </tr>
+                <td>웨이브 빌리지</td>
+                <td rowspan="8">200000원</td>
+                <td rowspan="8">120000원</td>
+                </tr>
+                <td>슬라드 빌리지</td>
+                </tr>
+                <td>서핑 빌리지</td>
+                </tr>
+                <td>어드벤처 빌리지</td>
+                </tr>
+                <td>키디 빌리지</td>
+                </tr>
+                <td>래프트 빌리지</td>
+                </tr>
+                <td>산후앙 빌리지</td>
+                </tr>
+                <td>타워 빌리지</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </main>
+  <footer></footer>
+  <script src="../js/price.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+.notion_table{
+  font-weight: 500;
+  width: 1000px;
+}
+.notion_table h2{
+  text-align: center;
+}
+.notion_table thead{
+  border-top: 1px solid var(--light_g4);
+  border-bottom: 1px solid var(--light_g4);
+}
+.notion_table .t_width_d{
+  width: 87px;
+}
+.notion_table tr{
+  border-bottom: 1px solid var(--light_g4);
+}
+.notion_table tbody tr td:first-child{
+  color: var(--main_color);
+}
+.numbers li{
+  padding: 0 10px
+}
+.numbers li a.active{
+  font-weight: 800;
+}
+.pagination{
+  padding-top: 15px;
+}
+
+/* ----------------- 반응형 ------------------- */
+@media screen and (max-width: 768px){
+  .container
+  {width: 100%;}
+  .breadcrumb{
+    font-size: calc(var(--font_size)*0.8);
+  }
+  .notion-wrapper h2{
+    font-size: calc(var(--font_size)*1.7);
+  }
+  .t_width_n{
+    width: 45px;
+  }
+}

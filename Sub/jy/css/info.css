@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
+@import url('https://webfontworld.github.io/SCoreDream/SCoreDream.css');
+@import url(../../../css/reset.css);
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--Gmaket_Sans);
+}
+body,p,span{
+  font-family: var(--Score_dream);
+}
+.sub_title2_tt{
+  color: var(--light_g4);
+}
+h2{
+  color: var(--light_g6);
+}
+.move [class*="op"]{
+  transform:none;
+  opacity: 1;
+}
+.move [class*="color"]{
+  color: var(--main_color);
+}
+
+*[class*="op3"]{
+  opacity: 0;
+  transition:.3s ease-out;
+}
+*[class*="op5"]{
+  opacity: 0;
+  transition:.5s ease-out;
+}
+*[class*="op7"]{
+  opacity: 0;
+  transition:.7s ease-out;
+}
+*[class*="op10"]{
+  opacity: 0;
+  transition:1s ease-out;
+}
+
+*[class*="sha_sky"]{
+  box-shadow: 10px 10px 30px 0px rgba(0, 194, 255, 0.25);
+}
+*[class*="sha_ong"]{
+  box-shadow: 10px 10px 30px 0px rgba(160, 127, 101, 0.3);
+}
+*[class*="sha_main"]{
+  box-shadow: 10px 10px 30px 0px rgba(0, 105, 255, 0.25);
+}
+*[class*="sha_pur"]{
+  box-shadow: 10px 10px 30px 0px rgba(46, 19, 155, 0.25);
+}
+*[class*="sha_pink"]{
+  box-shadow: 10px 10px 30px 0px rgba(164, 37, 109, 0.35);
+}
+.pick, .locker, .coin, .room, .gest, .surv{
+  display: flex;
+}
+
+/* 브래드크럼 */
+
+
+.action-bar {
+  margin: 30px 0;
+}
+
+/* breadcrumb */
+
+.breadcrumb {
+  font-size: 14px;
+  padding: auto 0;
+}
+.breadcrumb ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb li {
+  display: inline;
+  margin-right: 5px;
+}
+
+.breadcrumb li:last-child {
+  font-weight: bold;
+  color: #333; /* 현재페이지 스타일 */
+}
+
+.breadcrumb li:not(:last-child):after {
+  content: "";
+  margin-left: 5px;
+  color: #0069ff;
+}
+
+#copyButton {
+  width: 40px;
+  height: 40px;
+  background-image: url(/Sub/my/image/share.png);
+  text-indent: -9999px;
+  object-fit: cover;
+  background-size: 100% 100%;
+  margin-right: 5px;
+  opacity: 0.2;
+}
+
+#copyButton:hover {
+  opacity: 0.5;
+}
+
+#printButton {
+  width: 40px;
+  height: 40px;
+  background-image: url(/Sub/my/image/print.png);
+  text-indent: -9999px;
+  background-size: 100% 100%;
+  margin-right: 10px;
+  opacity: 0.2;
+}
+
+#printButton:hover {
+  opacity: 0.5;
+}
+
+
+/* 라이브러리  */
+.video_screen{
+  height: 300px;
+  /* overflow: hidden; */
+  background: linear-gradient(180deg, #A4B9D0 0%, #D9B59A 100%);
+  /* background: url(../img/backBig.jpg)no-repeat; */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  }
+
+.order .order_cont{
+  margin: 0 auto;
+  width: 940px;
+  /* background: white; */
+}
+.order .order_cont > div{
+  gap: 0 38px;
+}
+.info_Back{
+  position: fixed;
+  z-index: -1;
+}
+.order{
+  margin: 0 auto;
+  /* background: white; */
+}
+.order .title{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.order h3{
+  font-family: 'DM Serif Display';
+  font-size: calc(var(--font_size)*6); 
+  color: var(--light_g3);
+  line-height: calc(var(--line_height)*6);
+  padding: var(--padding) 0 var(--padding) 0;
+  width: 125px;
+}
+.order h3::before{
+  content: '';
+  position: absolute;
+  bottom: 105px;
+  left: -325px;
+  margin-right: 22px;
+  width: 303px;
+  border-bottom: 1px solid var(--light_g3);
+}
+.order div div{
+  width: 452px;
+}
+.order h4{
+  color: var(--light_g6);
+}
+.order .p3_tt{
+  color: var(--light_g3);
+  font-weight: bold;
+}
+.order .p1_tt{
+  color: var(--light_g4);
+}
+
+/* ---line */
+
+.time_table{
+  width: 700px;
+  height: 450px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.line{
+  width: 100%;
+  height: 900px;
+  /* background: url('../img/info_Background.jpeg')no-repeat center; */
+  background: linear-gradient(180deg, #A4B9D0 0%, #D9B59A 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin-bottom: calc(var(--padding)*5);
+}
+.line i{
+  font-size: calc(var(--font_size)*2);
+  color: #a07f65;
+}
+.line .ttime{
+  text-align: center;
+  padding-top: calc(var(--padding)*2);
+}
+.time_table .list div{
+  position:absolute;
+  width: 100%;
+  background: #06003599;
+  color: var(--white);
+  padding: 10px 20px;
+  bottom: 0;
+}
+
+
+/* ---------------------- */
+
+.guide{
+  width: 1078px;
+  margin: 0 auto;
+}
+.guide .ttime{
+  text-align: center;
+}
+.guide .gid{
+  display: flex;
+  width: 100%;
+  gap: 0 70px;
+  height: 600px;
+}
+.guide button{
+  width: 530px;
+}
+.accordion-body{
+  width: 530px;
+}
+.guide .pidback{
+  color: var(--light_g4);
+}
+.guide .gid .acc_list button{
+  color: var(--light_g5);
+}
+.accordion-button:not(.collapsed){
+  background-color: var(--sub_color1);
+  color: var(--sub_color3);
+  /* color: var(--white); */
+}
+
+@media screen and (max-width: 1100px) {
+  .order .order_cont{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .guide{
+    width: 100%;
+  }
+  .accordion{
+    width: 100%;
+  }
+  .guide button{
+    width: 100%;
+  }
+  .accordion-body{
+    width: 100%;
+  }
+
+}
+@media screen and (max-width: 1000px) {
+  .order div div{
+    width: 100%;
+  }
+  .order h3::before{
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  *{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .img{
+    width: 90%;
+  }
+  body{
+    margin: 0 auto;
+  }
+  .header2_tt{
+    font-size: 40px;
+  }
+  .sub_title2_tt{
+    font-size: 20px;
+  }
+  .order h3{
+    font-size: 80px;
+  }
+  .order{
+    width: 100%;
+  }
+  .pick, .locker, .coin, .room, .gest, .surv{
+    display: block;
+    margin: 0 auto;
+  }
+  .line{
+    width: 90%;
+  }
+  .guide .gid{
+    display: block;
+  }
+  .accordion{
+    text-align: center;
+  }
+  .accordion button{
+    margin: 0 auto;
+  }
+  .macada .d-flex{
+    overflow: hidden;
+  }
+  .sec3 .pool .pool_text1,
+  .sec3 .pool .pool_text2{
+    width: 80%;
+  }
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <link rel="stylesheet" href="../../../css/reset.css">
+  <link rel="stylesheet" href="../../../css/common.css">
+  <link rel="stylesheet" href="../css/info.css">  
+  
+  <title>캐리비안베이</title>  
+</head>
+<body>    
+<header></header>
+</header>
+<main>
+
+
+  <div class="action-bar d-flex justify-content-between align-items-center">
+
+    <!-- 브래드크럼 -->
+    <div class="breadcrumb d-flex align-items-center  container">
+      <ul>
+        <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+        <li><a href="#">카테고리</a></li>
+        <li><a href="#">이용정보</a></li>
+        <li>이용순서 &amp; 이용수칙</li>
+      </ul>
+    </div>
+
+
+    <!-- 공유,인쇄 버튼 -->
+
+    <div class="button_area d-flex flex-row">
+
+      <!-- 공유하기  -->
+
+      <div class="share">
+        <div>
+          <button id="copyButton" type="button" class="image-button">
+            <img src="../img/share.png" alt="공유하기 버튼">
+          </button>
+
+          <!-- JavaScript -->
+
+          <script>
+            const copyButton = document.getElementById("copyButton");
+
+            copyButton.addEventListener("click", () => {
+              // 현재 페이지의 URL 가져오기
+              const currentPageURL = window.location.href;
+
+              // 임시 input 요소를 만들어 URL 복사
+              const tempInput = document.createElement("input");
+              tempInput.value = currentPageURL;
+              document.body.appendChild(tempInput);
+              tempInput.select();
+              document.execCommand("copy");
+              document.body.removeChild(tempInput);
+
+              // 복사 완료 메시지 또는 상태 표시
+              alert("현재 페이지의 링크가 복사되었습니다.");
+            });
+          </script>
+        </div>
+
+      </div>
+
+      <!-- 인쇄하기 버튼 -->
+      <div class="print">
+        <button id="printButton" type="button" class="image-button">
+          <img src="../img/print.png" alt="이미지">
+        </button>
+
+
+        <script>
+          const printButton = document.getElementById("printButton");
+
+          printButton.addEventListener("click", () => {
+            // 페이지 인쇄
+            window.print();
+          });
+        </script>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- order -->
+<section class="order">
+  <div class="order_cont">
+    <div class="title m_pd">
+      <p class="sub_title2_tt">캐비가 #처음이라면?</p>
+      <h2 class="header2_tt">이용순서</h2> 
+    </div>
+  
+    <div class="pick justify-content-between m_pd">
+      <img src="../img/info_pick.png" alt="">
+      <div class="d-flex flex-column">
+        <h3 class="align-self-end position-relative color">01</h3>
+        <div>
+          <h4 class="sub_title_tt sm_pd">피크닉 장소</h4>
+          <p class="p3_tt sm_pd">위치 : 캐리비안베이 정문 50M</p>
+          <p class="p1_tt op5">입장 후 피크닉 장소 이용을 원하실 경우 게이트 근무자에게문의해 주시기 바랍니다.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="locker justify-content-between m_pd">
+      <div class="d-flex flex-column">
+        <h3 class="align-self-end position-relative color">02</h3>
+        <div>
+          <h4 class="sub_title_tt sm_pd">락커</h4>
+          <p class="p3_tt sm_pd">위치 : 정문 입장 전 왼쪽</p>
+          <p class="p1_tt op5">수질 오염 및 안전을 위하여 음식물, 돗자리, 의자류, 스노클 장비,다이버마스크, 오리발, 대형 물놀이 기구 유리 소재의모든 제품 등은 입장전에 보관해 주세요.</p>
+        </div>
+      </div>
+      <img src="../img/info_locker.png" alt="">
+    </div>
+    
+    <div class="coin justify-content-between m_pd">
+      <img src="../img/info_coin.png" alt="">
+      <div class="d-flex flex-column">
+        <h3 class="align-self-end position-relative color">03</h3>
+        <div>
+          <h4 class="sub_title_tt sm_pd">베이 코인</h4>
+          <p class="p3_tt sm_pd">파크에서 구입이 가능합니다.</p>
+          <p class="p1_tt op5">현금, 신용카드, 체크카드 결제만 가능합니다 <br>현금으로 구매한 베이코인은 당일 정산소에서 현금으로 환불 받으실 수 있습니다.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="room justify-content-between m_pd">
+      <div class="d-flex flex-column">
+        <h3 class="align-self-end position-relative color">04</h3>
+        <div>
+          <h4 class="sub_title_tt sm_pd">샤워 & 락커실</h4>
+          <p class="p3_tt sm_pd">실내 락커는 유료입니다</p>
+          <p class="p1_tt op5">만 4세 이상 또는 신장 105cm 이상의 어린이는 동성 보호자와 함께락커를 이용해 주세요. <br>타월은 별도 준비해 오시거나 대여 가능합니다.</p>
+        </div>
+      </div>
+      <img src="../img/info_room.png" alt="">
+    </div>
+    
+    <div class="gest justify-content-between m_pd">
+      <img src="../img/info_gest.png" alt="">
+      <div class="d-flex flex-column">
+        <h3 class="align-self-end position-relative color">05</h3>
+        <div>
+          <h4 class="sub_title_tt sm_pd">입장</h4>
+          <p class="p3_tt sm_pd">위치 : 게이트 입장 후 3층</p>
+          <p class="p1_tt op5">손님의 안전과 풀 위생을 위해 가방 및 아이스박스 등 내부 소지품 확인을 하고 있습니다.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="surv justify-content-between m_pd">
+      <div class="d-flex flex-column">
+        <h3 class="align-self-end position-relative color">06</h3>
+        <div>
+          <h4 class="sub_title_tt sm_pd">대여 서비스</h4>
+          <p class="p3_tt sm_pd">빌리지 &amp; 비치체어 &amp; 타월 등</p>
+          <p class="p1_tt op5">입장 후 피크닉 장소 이용을 원하실 경우 게이트 근무자에게문의해 주시기 바랍니다.</p>
+        </div>
+      </div>
+      <img src="../img/info_surv.png" alt="">
+    </div>
+    
+  </div> 
+</section>
+      
+<section class="line big_pd sha_ong" >
+  <div class="macada container big_pd d-flex justify-content-between row">
+          
+    <div class="ttime m_pd">
+      <p class="sub_title2_tt">#감성카페 #카리브해</p>
+      <h2 class="header2_tt">NEW 마르카리베</h2> 
+    </div>
+          
+      <div class="d-flex">
+              
+              <i class="fa-solid fa-caret-left align-self-center prev"></i>
+              <div class="time_table">
+                <ul class="list swiper-wrapper">
+                  <li class="swiper-slide">
+                    <img src="../img/marca_a.png" alt="">
+                    <div class="p5_tt">
+                      <p class="text-center">Mar Caribe the Night Moon</p>
+                    </div>    
+                  </li>
+                  <li class="swiper-slide">
+                    <img src="../img/marca_d.png" alt="">
+                    <div class="p5_tt">
+                      <p class="text-center">Mar Caribe the Emotional Waves</p>
+                    </div>          
+                  </li>
+                  <li class="swiper-slide">
+                    <img src="../img/marca_e.png" alt="">
+                    <div class="p5_tt">
+                      <p class="text-center">Mar Caribe the Bayside Cafe</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <i class="fa-solid fa-caret-right align-self-center next"></i>
+      </div>
+          
+  </div>
+</section>
+<section class="guide big_pd">
+
+  <div class="ttime m_pd">
+    <p class="sub_title2_tt">#캐비 안전 가이드</p>
+    <h2 class="header2_tt">이용수칙</h2> 
+  </div>
+
+  <div class="gid justify-content-between m_pd ">
+    <img src="../img/info_rule.png" alt="">
+  <div class="d-flex flex-column">
+      
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <p class="pidback detail_tt sm_pd">캐리비안 베이 이용 수칙은 현재 페이지에서 확인해 주세요. <br>수질 보호 캠페인에 대한 자세한 내용은 공지 사항을 확인해 주세요.</p>
+        
+        
+        <div class="acc_list">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed p1_tt" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  캐리비안베이 수질 보호 관련
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <p class="accordion-body p5_tt">깨끗이 샤워를 한 후 이용해 주시고 수질을 오염시키는 행동을 삼가 주십시오. <br>
+                  풀장 내부 음식물 반입 금지입니다. <br>
+                  당사는 깨끗한 수질을 유지하기 위해 *클린타임 운영, 주기적인 물 교체 및 *24시간 수처리시설을 가동하고 있습니다.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed p1_tt" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  캐리비안베이 안전 수칙
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <p class="accordion-body p5_tt">입수 시 다이빙은 위험하오니 삼가 주시기 바랍니다.
+                  체온이 떨어질 경우, 즉시 물에서 나와 수건으로 체온을 유지하며 휴식을 취하거나 따뜻한 실내를 이용해 주십시오. <br>
+                  안전요원의 안내에 따라 주시기 바랍니다. <br>
+                  파도풀을 이용하려면 구명 자켓을 착용해야 하며, 야외 파도풀 노란선은 파도 낙하 지역으로서 충돌 위험이 있습니다.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed p1_tt" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  캐리비안 베이 입장 안내
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <p class="accordion-body p5_tt">※ 손님의 안전과 풀 위생을 저해하는 물품은 반입 제한 및 보관 요청을 받으실 수 있습니다. <br>
+                  착용 금지 : 상해를 입힐 수 있는 귀걸이, 반지, 머리핀 등의 액세서리 <br>
+                  일부 슬라이드는 지정된 복장을 착용하지 않으면 이용이 제한될 수 있습니다. <br>
+                  만 10세 이하 어린이 및 노약자는 반드시 보호자가 동반해 주세요. <br>
+                  귀중품은 반드시 보관소에 보관해 주십시오.</p>
+              </div>
+            </div>
+          </div>
+    </div>
+
+      
+    </div>
+  </div>
+</section>       
+</main>
+<footer></footer>
+<script src="../js/info.js"></script>
+</body>
+</html>
