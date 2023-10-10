@@ -1,4 +1,8 @@
-/* header_right */
+/* header */
+
+#header a img {
+  width: 130px;
+}
 
 .toggle_btn {
   text-indent: -10000px;
