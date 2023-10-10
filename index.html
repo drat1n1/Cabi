@@ -44,34 +44,37 @@
   <link rel="stylesheet" href="css/main.css">
 
 
+  <!-- header slide -->
 
-  <title id="h_logo">캐리비안베이</title>
+  <div class="header-slider ">
+    <p class="p5_tt"><span class="material-symbols-outlined">sailing</span>오늘의 파크 영업 시간 : 9:00 ~17:00</p>
+    <p class="p5_tt"><span class="material-symbols-outlined">water</span>실내 파도풀 시간 : 정각-20분</p>
+    <p class="p5_tt"><span class="material-symbols-outlined">directions_car</span>현재 여유 주차장 : 정문(유료), 1번 주차장</p>
+    <p class="p5_tt"><span class="material-symbols-outlined">device_thermostat</span>현재온도: 37.5도</p>
+    <p class="p5_tt"><span class="material-symbols-outlined">sailing</span>오늘의 파크 영업 시간 : 9:00 ~17:00</p>
+    <p class="p5_tt"><span class="material-symbols-outlined">water</span>실내 파도풀 시간 : 정각-20분</p>
+  </div>
+
+
 </head>
 
 <body>
-  <header>
-    <!-- header slide -->
+  <!-- header -->
 
-    <div class="header-slider ">
-      <p class="p5_tt"><span class="material-symbols-outlined">sailing</span>오늘의 파크 영업 시간 : 9:00 ~17:00</p>
-      <p class="p5_tt"><span class="material-symbols-outlined">water</span>실내 파도풀 시간 : 정각-20분</p>
-      <p class="p5_tt"><span class="material-symbols-outlined">directions_car</span>현재 여유 주차장 : 정문(유료), 1번 주차장</p>
-      <p class="p5_tt"><span class="material-symbols-outlined">device_thermostat</span>현재온도: 37.5도</p>
-      <p class="p5_tt"><span class="material-symbols-outlined">sailing</span>오늘의 파크 영업 시간 : 9:00 ~17:00</p>
-      <p class="p5_tt"><span class="material-symbols-outlined">water</span>실내 파도풀 시간 : 정각-20분</p>
-    </div>
 
-    <!-- header -->
+  <header class="container">
 
     <!-- gnb -->
 
-    <div class="wrap d-flex justify-content-between">
+    <div class="wrap">
       <div id="header">
-        <a class="logo" href="#">
-          <img src="./img/cabi_logo.png" alt="logo">
-        </a>
-        <nav class="navbar">
-          <ul class="menu_list d-flex justify-content-between">
+        <nav class="navbar d-flex justify-content-between">
+          <div class="logo">
+            <a href="#">캐리비안베이</a>
+          </div>
+
+          <!-- 메인메뉴 -->
+          <ul class="menu_list d-flex justify-content-between align-items-center">
             <li>
               <a href="" class="font_green p1_tt sm_pd ">이용안내</a>
               <ul class="font_s sm_pd">
@@ -153,342 +156,82 @@
             </li>
           </ul>
 
+          <form class="search_modal ">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+          <div class="lang_dropdown">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                ENGLISH
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                JAPANESE
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                CHINESE
+              </label>
+            </div>
+          </div>
+
+          <img class="hamburger_modal" src="img/header_hambergur_modal.png" alt="">
+
         </nav>
       </div>
     </div>
-    <form class="search_modal">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-light" type="submit">Search</button>
-    </form>
-    <div class="lang_dropdown">
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-        <label class="form-check-label" for="flexRadioDefault1">
-          ENGLISH
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-        <label class="form-check-label" for="flexRadioDefault1">
-          JAPANESE
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-        <label class="form-check-label" for="flexRadioDefault1">
-          CHINESE
-        </label>
-      </div>
-    </div>
-    </div>
-    <img class="hamburger_modal" src="img/header_hambergur_modal.png" alt="">
+
   </header>
-
-
 
 
   <main>
     <section class="sec1_wrapper">
-      <div class="video-slider">
-        <div class="scene">
-          <div class="full-bg">
-            <video src="/Sub/my/image/maincb.webm" muted loop></video>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <section class="sec2 container">
-      <h3 class="sub_title2_tt light_g5">#짐싸기끝 #물놀이가자</h2>
-        <h2 class="header3_tt light_g6 sm_pd">캐비 가기 전 필수 Check ✔<span></span></h2>
-
-    </section>
-    <section class="sec3">
-      <div class="sec3 position-relative">
-
-        <div class="pc container">
-          <p class="sub_title_tt">이렇게 놀아야 #캐비지</p>
-          <h2 class="header1_tt m_pd">#어트랙션 한 <em class="">눈</em>에 보기</h2>
-
-
-          <div class="marca m_pd">
-            <div class="marca_list">
-              <img src="img/sec3_Marca_A.png" alt="" class="marca_a op5 op-up-top5 sha_sky">
-              <img src="img/sec3_Marca_B.png" alt="" class="marca_b op7 op-up-top5 sha_sky">
-              <img src="img/sec3_Marca_C.png" alt="" class="marca_c op10 op-up-top5 sha_sky">
-            </div>
-            <div class="marca_text">
-              <h3 class="sub_title2_tt op7 op-in-left sm_pd">NEW 마르카리베</h3>
-              <p class="p2_tt op10 op-in-left">우와~! 캐비 많이 변했다!! <br> 카리브해에서 <br> 시원한 파도 소리 들으며 ♪ <br> #캐리비안베이 #마르카리베</p>
-            </div>
-          </div>
-
-        </div>
-
-
-        <div class="mobile">
-          <div class="mobile text">
-            <p class="sub_title_tt">이렇게 놀아야 #캐비지</p>
-            <h2 class="header1_tt ">#어트랙션 한 <em class="">눈</em>에 보기</h2>
-          </div>
-
-          <div class="menu slider-container justify-content-center">
-
-            <div class="swiper-slide slider-item active">
-              <div class="menu_a">
-                <img src="img/tab/sec3-mo_a.png" alt="">
-              </div>
-              <div>
-                <h3 class="sub_title2_tt">NEW 마르카리베</h3>
-                <p class="p5_tt">우와~! 캐비 많이 변했다!! <br> 카리브해에서 시원한 파도 소리 들으며 ♪ <br> #캐리비안베이 #마르카리베</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide slider-item">
-              <div class="menu_b">
-                <img src="img/tab/sec3-mo_b.png" alt="">
-              </div>
-              <div>
-                <h3 class="sub_title2_tt">와일드리버 POOL</h3>
-                <p class="p5_tt">거대한 풍차와 시원한 폭포!탁 트인 공간에서 신나게 놀 수 있어 즐겁고, 멋진 경관 덕분에 눈도 즐거운캐리비안 베이의 명소랍니다.</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide slider-item">
-              <div class="menu_c">
-                <img src="img/tab/sec3-mo_c.png" alt="">
-              </div>
-              <div>
-                <h3 class="sub_title2_tt">포토 ZONE</h3>
-                <p class="p5_tt">어드벤쳐풀의 랜드마크인 해골에 스파를 상징하는 양머리 수건을 쓰고 인생샷을 남겨보세요 !</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide slider-item">
-              <div class="menu_d">
-                <img src="img/tab/sec3-mo_d.png" alt="">
-              </div>
-              <div>
-                <h3 class="sub_title2_tt">케이브 SAP</h3>
-                <p class="p5_tt">미라클 스파와 어드벤쳐풀이 사계절 이용 가능한 CAVE SPA가 새롭게 선보입니다 <br>“신비로운 케이브 스파에서 인생샷까지.. 놓치지 마세요..”</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide slider-item">
-              <div class="menu_e">
-                <img src="img/tab/sec3-mo_e.png" alt="">
-              </div>
-              <div>
-                <h3 class="sub_title2_tt">어드벤쳐 POOL</h3>
-                <p class="p5_tt">해골 물 폭포, 변신! 거대한 해골 물통에서 쏟아지는 등골이 서늘한 2.4톤의 물은 캐리비안 베이의 랜드 마크 !</p>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <section class="sec4">
-      <div class="Sec4"> </div>
-      <div class="Sec4_content mx-auto container">
-        <h3 class="cabi_txt_03 text-center sub_title_tt light-g4">캐비에서 즐기는 또 다른 재미</h3>
-        <span class="cabi_txt_01 text-center special_tt text-white">Carribian bay</span>
-        <p class="cabi_txt_02 text-center body1_tt">캐비에서 즐기는 #FOOD
-          <span class="span_dumytext"></span> #파라다이스🍴 <span class="span_dumytext_02"></span>놀지만 말고 내 배도 챙기라구
-        </p>
-        <p class="cabi_txt_04 text-center header2_tt">#파도풀도 #식후경</p>
-        <ul class="cabi_ul_image_text row text-center ">
-          <li class="Sec4_content_image_item  col-md-3 col-sm-6">
-            <div>
-              <img class="rounded-3" src="img/section4_food_01.png" alt="">
-              <h6 class="text-center body3_tt">상큼달달 음료에 Cheers! <br> 비치사이드바</h6>
-            </div>
-          </li>
-          <li class="Sec4_content_image_item col-md-3 col-sm-6">
-            <div>
-              <img class="rounded-3" src="img/section4_food_02.png" alt="">
-              <h6 class="text-center body3_tt">한입 베어 무는 순간 <br> 육즙팡팡 멜팅소울</h6>
-            </div>
-          </li>
-          <li class="Sec4_content_image_item col-md-3 col-sm-6">
-            <div>
-              <img class="rounded-3" src="img/section4_food_03.jpg" alt="">
-              <h6 class="text-center body3_tt">캐비에서 먹는 <br> 브런치 라꼬스타</h6>
-            </div>
-          </li>
-          <li class="Sec4_content_image_item col-md-3 col-sm-6">
-            <div>
-              <img class="rounded-3" src="img/section4_food_04.png" alt="">
-              <h6 class="text-center body3_tt">목에서 아마존 급류가 느껴지는 <br> 아마존 익스프레스 음료</h6>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      </div>
-
-
-    </section>
-    <section class="sec5">
-      <div class="mainSec5_container d-flex ">
-        <div class="Sec5_left">
-          <p>매달 풍성한 이벤트로 함께하는 캐리비안베이</p><br>
-          <h2 class="sec5_p">여름엔 캐비지!</h2>
-          <h2>캐리비안베이 더 재밌게<br>
-            즐기기
-          </h2><br>
-          <div class="d-flex">
-            <p>매달 풍성한 이벤트로 함께하는 <br>캐리비안베이</p>
-            <p class="sec5_more"> <a href="#"></a>더 알아보기 <i class="fa-solid fa-arrow-right"></i></p>
-          </div>
-          <hr>
-          <img src="/Sub/my/image/attraction_box_01.png" alt="">
-
-
-        </div>
-        <div class="Sec5_right d-flex flex-column">
-          <div class="sec5_wrapper ">
-
-            <div class="slider_box d-flex">
-              <div class="sec5_slider_container">
-                <div class="sec5_slider1 d-flex flex-column mb-2">
-                  <img src="/Sub/my/image/slide_image/image1.png" alt="이미지1">
-                  <img src="/Sub/my/image/slide_image/image2.png" alt="이미지2">
-                  <img src="/Sub/my/image/slide_image/image3.jpg" alt="이미지3">
-                  <img src="/Sub/my/image/slide_image/image4.jpg" alt="이미지4">
-                  <img src="/Sub/my/image/slide_image/image5.png" alt="이미지5">
-                  <img src="/Sub/my/image/slide_image/image6.jpg" alt="이미지6">
-                  <img src="/Sub/my/image/slide_image/image7.jpg" alt="이미지7">
-                  <img src="/Sub/my/image/slide_image/image8.jpg" alt="이미지8">
-                  <img src="/Sub/my/image/slide_image/image9.jpg" alt="이미지9">
-                  <img src="/Sub/my/image/slide_image/image10.png" alt="이미지10">
-
-
-                </div>
-              </div>
-
-              <div class="sec5_slider_container">
-                <div class="sec5_slider2 d-flex flex-column mb-2">
-                  <img src="/Sub/my/image/slide_image/image11.png" alt="이미지11">
-                  <img src="/Sub/my/image/slide_image/image12.jpg" alt="이미지12">
-                  <img src="/Sub/my/image/slide_image/image13.png" alt="이미지13">
-                  <img src="/Sub/my/image/slide_image/image14.jpg" alt="이미지14">
-                  <img src="/Sub/my/image/slide_image/image15.jpg" alt="이미지15">
-                  <img src="/Sub/my/image/slide_image/image16.jpg" alt="이미지16">
-                  <img src="/Sub/my/image/slide_image/image17.jpg" alt="이미지17">
-                  <img src="/Sub/my/image/slide_image/image18.jpg" alt="이미지18">
-                  <img src="/Sub/my/image/slide_image/image19.jpg" alt="이미지19">
-                  <img src="/Sub/my/image/slide_image/image20.jpg" alt="이미지20">
-
-
-                </div>
-              </div>
-            </div>
-
-            <div class="sec5_sns">
-              <p>유튜브, SNS,인스타로 만나보는<br>
-                캐리비안베이
-              </p>
-              <ul class="sec5_img d-flex">
-                <li><a href="https://www.instagram.com/witheverland/">인스타그램</a></li>
-                <li><a href="https://blog.naver.com/witheverland">네이버</a></li>
-                <li><a href="https://www.youtube.com/user/withEverland">유튜브</a></li>
-                <li><a href="https://twitter.com/witheverland">트위터</a></li>
-              </ul>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-      <div class="bg_move_slider">
-        <p>Carribian BAY Carribian BAY Carribian BAY</p>
-        <p>Carribian BAY Carribian BAY Carribian BAY</p>
-      </div>
-      </div>
-
-      </div>
-
 
     </section>
 
-    <section class="sec7 container big_pd d-flex justify-content-between row">
-      <div class="col-lg col-md-6">
-        <h2 class="sub_title_tt light_g6">INFOMATION</h2>
-        <div class="info_switch">
-          <i class="fa-solid fa-angle-left sec7_switch_prev"></i>
-          <i class="fa-solid fa-angle-right sec7_switch_next"></i>
-        </div>
-        <hr>
-        <div class="sec7_swiper">
-          <ul class="info swiper-wrapper">
-            <li class="swiper-slide">
-              <img src="img/information1.png" alt="kakao shuttle bus image">
-              <div class="p5_tt">
-                <span>카카오 T 셔틀로 편하게 즐기세요</span>
-                <span>
-                  <a href="#">자세히 보기<i class="fa-solid fa-angle-right"></i></a>
-                </span>
-              </div>
-            </li>
-            <li class="swiper-slide">
-              <img src="img/information2.png" alt="LostArk game event image">
-              <div class="p5_tt">
-                <span>모코코 in 캐리비안 베이 이벤트</span>
-                <span>
-                  <a href="#">자세히 보기<i class="fa-solid fa-angle-right"></i></a>
-                </span>
-              </div>
-            </li>
-            <li class="swiper-slide">
-              <img src="img/information3.png" alt="everyTime summer event image">
-              <div class="p5_tt">
-                <span>에브리타임과 함께 수고했써머 FESTIVAL</span>
-                <span>
-                  <a href="#">자세히 보기<i class="fa-solid fa-angle-right"></i></a>
-                </span>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="notice col-md-6">
-        <h2 class="sub_title_tt light_g6">공지사항</h2>
-        <p class="notice_detail detail_tt"><a href="#">자세히 보기<i class="fa-solid fa-angle-right"></i></a></p>
-        <hr>
-        <ul>
-          <li class="d-flex justify-content-between align-items-center">
-            <span class="p1_tt"><b>01</b>Who&rsquo;s the Captain</span><span class="notice_date p4_tt">2023-07-14</span>
-          </li>
-          <li class="d-flex justify-content-between align-items-center">
-            <span class="p1_tt"><b>02</b>모코코 해적단 in 캐리비안 베이</span><span class="notice_date p4_tt">2023-07-13</span>
-          </li>
-          <li class="d-flex justify-content-between align-items-center">
-            <span class="p1_tt"><b>03</b>더 이상의 기다림은 없다! 캐비투어 OPEN</span><span
-              class="notice_date p4_tt">2023-06-30</span>
-          </li>
-          <li class="d-flex justify-content-between align-items-center">
-            <span class="p1_tt"><b>04</b>여름을 제대로 즐기는 방법?</span><span class="notice_date p4_tt">2023-06-27</span>
-          </li>
-          <li class="d-flex justify-content-between align-items-center">
-            <span class="p1_tt"><b>05</b>23년 시즌 캘린더 안내</span><span class="notice_date p4_tt">2023-01-27</span>
-          </li>
-          <li class="d-flex justify-content-between align-items-center">
-            <span class="p1_tt"><b>06</b>캐리비안 베이 카카오 T 셔틀 오픈</span><span class="notice_date p4_tt">2022-07-27</span>
-          </li>
-        </ul>
-      </div>
+
+    <section class="sec2_wrapper">
+
     </section>
+
+
+
+    <section class="sec3_wrapper">
+
+    </section>
+
+
+    <section class="sec3_wrapper">
+
+    </section>
+
+    <section class="sec3_wrapper">
+
+    </section>
+
+    <section class="sec3_wrapper">
+
+    </section>
+
+
   </main>
-  <footer class="d-flex">
 
+
+
+
+
+  <footer class="d-flex container">
 
     <div class="footer_wrap d-flex">
 
       <a class="footer_logo" href="index.html">
-        <img src="/Sub/my/image/logo_white.png" alt="캐리비안베이 로고">
+        <img src="/img/cabi_logo.png" alt="캐리비안베이 로고">
       </a>
       <div class='footer-link d-flex flex-column '>
         <div class="footer_content">

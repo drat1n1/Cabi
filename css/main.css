@@ -1,26 +1,77 @@
 /* header */
+.navbar > .logo {
+  width: 196px;
+  height: 55px;
+  background-image: url("/img/cabi_logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-indent: -99999px;
+}
 
-#header a img {
-  width: 130px;
+.menu_list {
+  gap: 30px;
+}
+
+.menu_list li ul li {
+  display: none;
 }
 
 .toggle_btn {
   text-indent: -10000px;
 }
 
+.search_modal {
+  display: none;
+}
+
+.lang_dropdown {
+  display: none;
+}
+
 /* sec1 */
-.sec1 {
+
+.sec1_wrapper {
   background: #1111;
+  height: 300px;
 }
 
 /* sec2 */
 
+.sec1_wrapper {
+  background: #1111;
+  height: 300px;
+}
+
 /* sec3 */
+
+.sec1_wrapper {
+  background: #1111;
+  height: 300px;
+}
 
 /* sec4 */
 
+.sec1_wrapper {
+  background: #1111;
+  height: 300px;
+}
+
 /* sec5 */
+
+.sec1_wrapper {
+  background: #1111;
+  height: 300px;
+}
 
 /* sec6 */
 
-/* sec7 */
+.sec1_wrapper {
+  background: #1111;
+  height: 300px;
+}
+
+/* footer */
+
+.footer_logo img {
+  height: 50px;
+}
