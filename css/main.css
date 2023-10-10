@@ -12,9 +12,11 @@
   gap: 30px;
 }
 
-.menu_list > li ul li {
+/* .menu_list li ul li {
+  position: absolute;
   visibility: hidden;
-}
+  opacity: 1;
+} */
 
 .toggle_btn {
   text-indent: -10000px;
@@ -37,36 +39,29 @@
 
 /* sec2 */
 
-.sec1_wrapper {
-  background: #1111;
+.sec2_wrapper {
+  background: rgba(46, 46, 155, 0.067);
   height: 300px;
 }
 
 /* sec3 */
 
-.sec1_wrapper {
-  background: #1111;
+.sec3_wrapper {
+  background: rgba(252, 151, 151, 0.067);
   height: 300px;
 }
 
 /* sec4 */
 
-.sec1_wrapper {
-  background: #1111;
+.sec4_wrapper {
+  background: rgba(134, 134, 134, 0.067);
   height: 300px;
 }
 
 /* sec5 */
 
-.sec1_wrapper {
-  background: #1111;
-  height: 300px;
-}
-
-/* sec6 */
-
-.sec1_wrapper {
-  background: #1111;
+.sec5_wrapper {
+  background: #3a3a3a11;
   height: 300px;
 }
 
