@@ -58,140 +58,154 @@
 
 </head>
 
-<body>
-  <!-- header -->
+
+<!-- header -->
 
 
-  <header class="container">
+<header>
 
-    <!-- gnb -->
+  <!-- gnb -->
 
-    <div class="wrap">
-      <div id="header">
-        <nav class="navbar d-flex justify-content-between">
-          <div class="logo">
-            <a href="#">캐리비안베이</a>
+  <div class="wrap container">
+    <div class="header ">
+      <nav class="navbar d-flex justify-content-between">
+        <div class="logo">
+          <a href="#">캐리비안베이</a>
+        </div>
+
+        <!-- 메인메뉴 -->
+        <ul class="menu_list d-flex justify-content-between align-items-center">
+          <li>
+            <a href="" class="p1_tt sm_pd ">이용안내</a>
+            <ul class="dropdown_menu font_s sm_pd">
+              <li><a href="" class="p4_tt">이용방법</a></li>
+              <li><a href="" class="p4_tt">운영시간 (운휴정보)</a></li>
+              <li><a href="" class="p4_tt">편의시설</a></li>
+              <li><a href="" class="p4_tt">교통정보</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="" class="p1_tt sm_pd">요금&프로모션</a>
+            <ul class="dropdown_menu p1_tt sm_pd">
+              <li><a href="" class="p4_tt">이벤트</a></li>
+              <li><a href="" class="p4_tt">이용요금</a></li>
+              <li><a href="" class="p4_tt">제휴카드&프로모션</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="" class="p1_tt sm_pd">어트랙션</a>
+            <ul class="dropdown_menu font_s  sm_pd">
+              <li><a href="" class="p4_tt">어트랙션</a></li>
+              <li><a href="" class="p4_tt">가이드맵</a></li>
+              <li><a href="" class="p4_tt">주의사항</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="" class="p1_tt sm_pd">캐리비안 베이 즐기기</a>
+            <ul class="dropdown_menu font_s sm_pd">
+              <li><a href="" class="p4_tt">식음료&빌리지&선물숍</a></li>
+              <li><a href="" class="p4_tt">예약 서비스</a></li>
+              <li><a href="" class="p4_tt">공지사항</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- 우측메뉴 -->
+        <ul class="header_right_icon d-flex">
+          <li>
+            <button class="nav-link nav-item toggle_btn logo_switch_mode_day">
+              <img src="img/header_toggle_btn_day.png" alt="캐리비안 베이 낮버전 버튼">
+              <img src="img/header_toggle_btn_night.png" alt="캐리비안 베이 밤버전 버튼">
+            </button>
+          </li>
+          <li class="search_rel">
+            <button class="nav-link nav-item search_btn text-dark">
+              <svg xmlns="http://www.w3.org/2000/svg" wilih="24" height="24" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="12" fill="#F4F4F4" />
+                <path
+                  d="M19 18.1483L15.8634 15.2025M15.8634 15.2025C17.015 14.121 17.7273 12.6269 17.7273 10.9765C17.7273 7.67577 14.8782 5 11.3636 5C7.8491 5 5 7.67577 5 10.9765C5 14.2772 7.8491 16.953 11.3636 16.953C13.1209 16.953 14.7118 16.2841 15.8634 15.2025Z"
+                  stroke="#686B6E" stroke-wilih="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </li>
+          <li class="lang_rel">
+            <button class="lang_btn nav-link nav-item text-dark">
+              <svg xmlns="http://www.w3.org/2000/svg" wilih="24" height="24" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="12" fill="#F4F4F4" />
+                <path
+                  d="M20 11.5133C20 15.6628 16.4183 19.0266 12 19.0266M20 11.5133C20 7.36383 16.4183 4 12 4M20 11.5133H4M12 19.0266C7.58172 19.0266 4 15.6628 4 11.5133M12 19.0266C13.4728 19.0266 14.6667 15.6628 14.6667 11.5133C14.6667 7.36383 13.4728 4 12 4M12 19.0266C10.5272 19.0266 9.33333 15.6628 9.33333 11.5133C9.33333 7.36383 10.5272 4 12 4M4 11.5133C4 7.36383 7.58172 4 12 4"
+                  stroke="#686B6E" stroke-wilih="1.5" stroke-linecap="round" />
+              </svg>
+            </button>
+          </li>
+          <li class="hamburger_rel">
+            <button class="hamburger_btn nav-link nav-item text-dark">
+              <svg xmlns="http://www.w3.org/2000/svg" wilih="24" height="24" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="12" fill="#F4F4F4" />
+                <path
+                  d="M6 7C6 6.44772 6.44772 6 7 6H17C17.5523 6 18 6.44772 18 7C18 7.55228 17.5523 8 17 8H7C6.44772 8 6 7.55228 6 7Z"
+                  fill="#686B6E" />
+                <path
+                  d="M6 12C6 11.4477 6.44772 11 7 11H17C17.5523 11 18 11.4477 18 12C18 12.5523 17.5523 13 17 13H7C6.44772 13 6 12.5523 6 12Z"
+                  fill="#686B6E" />
+                <path
+                  d="M6 17C6 16.4477 6.44772 16 7 16H17C17.5523 16 18 16.4477 18 17C18 17.5523 17.5523 18 17 18H7C6.44772 18 6 17.5523 6 17Z"
+                  fill="#686B6E" />
+              </svg>
+            </button>
+          </li>
+        </ul>
+
+        <form class="search_modal ">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+        <div class="lang_dropdown">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              ENGLISH
+            </label>
           </div>
-
-          <!-- 메인메뉴 -->
-          <ul class="menu_list d-flex justify-content-between align-items-center">
-            <li>
-              <a href="" class="font_green p1_tt sm_pd ">이용안내</a>
-              <ul class="font_s sm_pd">
-                <li><a href="" class="p4_tt">이용방법</a></li>
-                <li><a href="" class="p4_tt">운영시간 (운휴정보)</a></li>
-                <li><a href="" class="p4_tt">편의시설</a></li>
-                <li><a href="" class="p4_tt">교통정보</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="" class="font_green p1_tt sm_pd">요금&프로모션</a>
-              <ul class="font_s  sm_pd">
-                <li><a href="" class="p4_tt">이벤트</a></li>
-                <li><a href="" class="p4_tt">이용요금</a></li>
-                <li><a href="" class="p4_tt">제휴카드&프로모션</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="" class="font_green p1_tt sm_pd">어트랙션</a>
-              <ul class="font_s  sm_pd">
-                <li><a href="" class="p4_tt">어트랙션</a></li>
-                <li><a href="" class="p4_tt">가이드맵</a></li>
-                <li><a href="" class="p4_tt">주의사항</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="" class="font_green p1_tt sm_pd">캐리비안 베이 즐기기</a>
-              <ul class="font_s  sm_pd">
-                <li><a href="" class="p4_tt">식음료&빌리지&선물숍</a></li>
-                <li><a href="" class="p4_tt">예약 서비스</a></li>
-                <li><a href="" class="p4_tt">공지사항</a></li>
-              </ul>
-            </li>
-          </ul>
-
-          <!-- 우측메뉴 -->
-          <ul class="header_right_icon d-flex">
-            <li>
-              <button class="nav-link nav-item toggle_btn logo_switch_mode_day">
-                <img src="img/header_toggle_btn_day.png" alt="캐리비안 베이 낮버전 버튼">
-                <img src="img/header_toggle_btn_night.png" alt="캐리비안 베이 밤버전 버튼">
-              </button>
-            </li>
-            <li class="search_rel">
-              <button class="nav-link nav-item search_btn text-dark">
-                <svg xmlns="http://www.w3.org/2000/svg" wilih="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <circle cx="12" cy="12" r="12" fill="#F4F4F4" />
-                  <path
-                    d="M19 18.1483L15.8634 15.2025M15.8634 15.2025C17.015 14.121 17.7273 12.6269 17.7273 10.9765C17.7273 7.67577 14.8782 5 11.3636 5C7.8491 5 5 7.67577 5 10.9765C5 14.2772 7.8491 16.953 11.3636 16.953C13.1209 16.953 14.7118 16.2841 15.8634 15.2025Z"
-                    stroke="#686B6E" stroke-wilih="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </button>
-            </li>
-            <li class="lang_rel">
-              <button class="lang_btn nav-link nav-item text-dark">
-                <svg xmlns="http://www.w3.org/2000/svg" wilih="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <circle cx="12" cy="12" r="12" fill="#F4F4F4" />
-                  <path
-                    d="M20 11.5133C20 15.6628 16.4183 19.0266 12 19.0266M20 11.5133C20 7.36383 16.4183 4 12 4M20 11.5133H4M12 19.0266C7.58172 19.0266 4 15.6628 4 11.5133M12 19.0266C13.4728 19.0266 14.6667 15.6628 14.6667 11.5133C14.6667 7.36383 13.4728 4 12 4M12 19.0266C10.5272 19.0266 9.33333 15.6628 9.33333 11.5133C9.33333 7.36383 10.5272 4 12 4M4 11.5133C4 7.36383 7.58172 4 12 4"
-                    stroke="#686B6E" stroke-wilih="1.5" stroke-linecap="round" />
-                </svg>
-              </button>
-            </li>
-            <li class="hamburger_rel">
-              <button class="hamburger_btn nav-link nav-item text-dark">
-                <svg xmlns="http://www.w3.org/2000/svg" wilih="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <circle cx="12" cy="12" r="12" fill="#F4F4F4" />
-                  <path
-                    d="M6 7C6 6.44772 6.44772 6 7 6H17C17.5523 6 18 6.44772 18 7C18 7.55228 17.5523 8 17 8H7C6.44772 8 6 7.55228 6 7Z"
-                    fill="#686B6E" />
-                  <path
-                    d="M6 12C6 11.4477 6.44772 11 7 11H17C17.5523 11 18 11.4477 18 12C18 12.5523 17.5523 13 17 13H7C6.44772 13 6 12.5523 6 12Z"
-                    fill="#686B6E" />
-                  <path
-                    d="M6 17C6 16.4477 6.44772 16 7 16H17C17.5523 16 18 16.4477 18 17C18 17.5523 17.5523 18 17 18H7C6.44772 18 6 17.5523 6 17Z"
-                    fill="#686B6E" />
-                </svg>
-              </button>
-            </li>
-          </ul>
-
-          <form class="search_modal ">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-light" type="submit">Search</button>
-          </form>
-          <div class="lang_dropdown">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
-                ENGLISH
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
-                JAPANESE
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
-                CHINESE
-              </label>
-            </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              JAPANESE
+            </label>
           </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              CHINESE
+            </label>
+          </div>
+        </div>
 
-          <img class="hamburger_modal" src="img/header_hambergur_modal.png" alt="">
+        <img class="hamburger_modal" src="img/header_hambergur_modal.png" alt="">
 
-        </nav>
-      </div>
+      </nav>
     </div>
+  </div>
 
-  </header>
+</header>
 
-
+<body>
   <main>
     <section class="sec1_wrapper">
+
+      <div class="slide slide_wrap">
+        <div class="slide_item">1</div>
+        <div class="slide_item">2</div>
+        <div class="slide_item">3</div>
+        <div class="slide_item">4</div>
+        <div class="slide_item">5</div>
+        <div class="slide_prev_button slide_button">◀</div>
+        <div class="slide_next_button slide_button">▶</div>
+        <ul class="slide_pagination"></ul>
+      </div>
+
+
+
 
     </section>
 

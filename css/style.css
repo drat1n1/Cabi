@@ -147,10 +147,6 @@
 
 /* layout */
 
-.container {
-  width: 1320px;
-  margin: 0 auto;
-}
 p,
 span {
   font-family: var(--Score_dream);
