@@ -12,8 +12,8 @@
   gap: 30px;
 }
 
-.menu_list li ul li {
-  display: none;
+.menu_list > li ul li {
+  visibility: hidden;
 }
 
 .toggle_btn {
