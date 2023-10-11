@@ -44,12 +44,61 @@ header {
 
 /* sec1 */
 
-.sec1_wrapper {
-  background: #1111;
+.mainslide-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.mainslide-container {
+  position: relative;
+  margin: 0;
+  padding: 0;
   height: 500px;
 }
 
+.mainslide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  list-style: none;
+}
+
+.sec1_wrapper {
+  height: 500px;
+}
+
+.mainslide1 {
+  background-image: url("https://velog.velcdn.com/images/rtminy/post/a31aea36-5a02-43a0-8b8e-7ada65c9a496/image.png");
+}
+
+.mainslide2 {
+  background-image: url("https://velog.velcdn.com/images/rtminy/post/80a6e123-74e7-48e8-ac82-062830295d46/image.png");
+}
+
+.mainslide3 {
+  background-image: url("https://velog.velcdn.com/images/rtminy/post/7ce16434-df6a-47bb-8138-7ae3bf0a1cf0/image.png");
+}
+
+.mainslide-wrapper .chev-wrap.left {
+  left: 230px;
+}
+.mainslide-wrapper .chev-wrap.right {
+  right: 230px;
+}
+
 /* sec2 */
+
+.sec2_container {
+  margin-top: 100px;
+}
 
 .sec2_wrapper {
   background: rgba(34, 34, 204, 0.5);
