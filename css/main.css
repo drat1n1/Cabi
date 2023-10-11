@@ -126,6 +126,13 @@ header {
   height: 500px;
 }
 
+/* sec6 */
+
+.sec6_wrapper {
+  background: #ff7d7d11;
+  height: 500px;
+}
+
 /* footer */
 
 .footer_logo img {
