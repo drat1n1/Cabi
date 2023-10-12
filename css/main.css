@@ -44,54 +44,121 @@ header {
 
 /* sec1 */
 
-.mainslide-wrapper {
+/* .mainslide-wrapper {
   position: relative;
   width: 100%;
   overflow: hidden;
   box-sizing: border-box;
-}
+} */
 
-.mainslide-container {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  height: 500px;
-}
+.slide_wrap {
+  display: flex;
+  flex-wrap: nowrap;
 
-.mainslide {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
   width: 100%;
-  text-align: center;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  user-select: none;
+}
+
+.slide_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  width: 100%;
+  height: 600px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   list-style: none;
+
+  transition: left 0.15s;
 }
 
-.sec1_wrapper {
-  height: 500px;
+.slide_button {
+  /* layout */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* position */
+  position: absolute;
+  /* 버튼이 중앙에 위치하게 하기위해 계산 */
+  top: calc(50% - 16px);
+
+  /* size */
+  width: 32px;
+  height: 32px;
+
+  /* style */
+  border-radius: 100%;
+  background-color: #cccc;
+  cursor: pointer;
 }
 
-.mainslide1 {
+/* prev next 버튼 */
+
+.slide_prev_button {
+  left: 320px;
+}
+.slide_next_button {
+  right: 320px;
+}
+
+.item1 {
+  background-color: rgb(218, 238, 255);
   background-image: url("https://velog.velcdn.com/images/rtminy/post/a31aea36-5a02-43a0-8b8e-7ada65c9a496/image.png");
 }
 
-.mainslide2 {
+.item2 {
+  background-color: aqua;
   background-image: url("https://velog.velcdn.com/images/rtminy/post/80a6e123-74e7-48e8-ac82-062830295d46/image.png");
 }
 
-.mainslide3 {
+.item3 {
+  background-color: blueviolet;
   background-image: url("https://velog.velcdn.com/images/rtminy/post/7ce16434-df6a-47bb-8138-7ae3bf0a1cf0/image.png");
 }
 
-.mainslide-wrapper .chev-wrap.left {
-  left: 230px;
+/* pagenation */
+
+.slide_pagination {
+  /* layout */
+  display: flex;
+  gap: 5px;
+
+  /* position */
+  position: absolute;
+  bottom: 0;
+  /* left:50%, translateX(-50%)를 하면 가로 가운데로 위치시킬 수 있다. */
+  left: 50%;
+  transform: translateX(-50%);
 }
-.mainslide-wrapper .chev-wrap.right {
-  right: 230px;
+
+.slide_pagination > li {
+  /* 현재 슬라이드가 아닌 것은 투명도 부여 */
+  color: #7fb5ff88;
+  cursor: pointer;
+  font-size: 25px;
+}
+.slide_pagination > li.active {
+  /* 현재 슬라이드 색상은 투명도 없이 */
+  color: #7fb5ff;
+}
+
+.slide_item_duplicate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 0px;
+  width: 100%;
+  height: 300px;
+  flex-shrink: 0;
+  transition: left 0.15s;
 }
 
 /* sec2 */
@@ -103,8 +170,7 @@ header {
 .sec2_wrapper {
   height: 500px;
   background: #ffffff;
-  background-image: radial-gradient(#ffffff 20%, transparent 0),
-    radial-gradient(#adefff 10%, transparent 0);
+  background-image: radial-gradient(#ffffff 20%, transparent 0), radial-gradient(#adefff 10%, transparent 0);
   background-position: 0 0, -50px -50px;
   background-size: 30px 30px;
 }
