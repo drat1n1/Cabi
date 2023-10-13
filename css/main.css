@@ -170,9 +170,23 @@ header {
 .sec2_wrapper {
   height: 500px;
   background: #ffffff;
-  background-image: radial-gradient(#ffffff 20%, transparent 0), radial-gradient(#adefff 10%, transparent 0);
+  background-image: radial-gradient(#ffffff 20%, transparent 0),
+    radial-gradient(#adefff 10%, transparent 0);
   background-position: 0 0, -50px -50px;
   background-size: 30px 30px;
+}
+
+.sec2_container ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sec2_container ul li {
+  width: 24%;
+  height: 350px;
+  background-color: #7fb5ff;
 }
 
 /* sec3 */
