@@ -48,6 +48,21 @@
 
 <header>
 
+
+  <!-- header slide -->
+
+  <div class="header-slider ">
+    <p class="p5_tt"><span class="material-symbols-outlined">sailing</span>오늘의 파크 영업 시간 : 9:00 ~17:00</p>
+    <p class="p5_tt"><span class="material-symbols-outlined">water</span>실내 파도풀 시간 : 정각-20분</p>
+    <p class="p5_tt"><span class="material-symbols-outlined">directions_car</span>현재 여유 주차장 : 정문(유료), 1번 주차장</p>
+    <p class="p5_tt"><span class="material-symbols-outlined">device_thermostat</span>현재온도: 37.5도</p>
+    <p class="p5_tt"><span class="material-symbols-outlined">sailing</span>오늘의 파크 영업 시간 : 9:00 ~17:00</p>
+    <p class="p5_tt"><span class="material-symbols-outlined">water</span>실내 파도풀 시간 : 정각-20분</p>
+  </div>
+
+
+
+
   <!-- gnb -->
 
   <div class="wrap container">
@@ -181,17 +196,6 @@
   <link rel="stylesheet" href="css/main.css">
 
 
-  <!-- header slide -->
-
-  <div class="header-slider ">
-    <p class="p5_tt"><span class="material-symbols-outlined">sailing</span>오늘의 파크 영업 시간 : 9:00 ~17:00</p>
-    <p class="p5_tt"><span class="material-symbols-outlined">water</span>실내 파도풀 시간 : 정각-20분</p>
-    <p class="p5_tt"><span class="material-symbols-outlined">directions_car</span>현재 여유 주차장 : 정문(유료), 1번 주차장</p>
-    <p class="p5_tt"><span class="material-symbols-outlined">device_thermostat</span>현재온도: 37.5도</p>
-    <p class="p5_tt"><span class="material-symbols-outlined">sailing</span>오늘의 파크 영업 시간 : 9:00 ~17:00</p>
-    <p class="p5_tt"><span class="material-symbols-outlined">water</span>실내 파도풀 시간 : 정각-20분</p>
-  </div>
-
 
 
 
@@ -200,37 +204,66 @@
 
       <!-- 
       <h2 class="main-carousel-tt">메인 캐러셀</h2> -->
-      <div class="mainslide-wrapper">
+      <div class="mainslide_wrapper">
 
-        <div class="slide slide_wrap">
-          <div class="slide_item item1"
+        <ul class="slide_container">
+          <li class="slide_item item1"
             data-url="https://velog.velcdn.com/images/rtminy/post/a31aea36-5a02-43a0-8b8e-7ada65c9a496/image.png"
-            data-title="슬라이더1" data-index="0"></div>
+            data-title="슬라이더1" data-index="0">
 
-          <div class="slide_item item2"
+            <div class="contents">
+              <h2>Slide 01 title</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="">Visit now</a>
+            </div>
+          
+          </li>
+
+          <li class="slide_item item2"
             data-url="https://velog.velcdn.com/images/rtminy/post/80a6e123-74e7-48e8-ac82-062830295d46/image.png"
-            data-title="슬라이더2" data-index="1"></div>
+            data-title="슬라이더2" data-index="1">
+                
+            <div class="contents">
+              <h2>Slide 01 title</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="">Visit now</a>
+            </div>
+          
+          
+          </li>
 
-          <div class="slide_item item3"
+          <li class="slide_item item3"
             data-url="https://velog.velcdn.com/images/rtminy/post/7ce16434-df6a-47bb-8138-7ae3bf0a1cf0/image.png"
-            data-title="슬라이더3" data-index="2"></div>
+            data-title="슬라이더3" data-index="2">
+          
+                
+            <div class="contents">
+              <h2>Slide 01 title</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="">Visit now</a>
+            </div>
+          
+          
+  
+          </li>
+
+        
+        </ul>
+            <a href="#" id="prev" class="slide_button chev-wrap left"><i class="fas fa-chevron-left"></i></a>
+            <a href="#" id="next" class="slide_button chev-wrap right"><i class="fas fa-chevron-right"></i></a>
 
 
-          <div class="slide_prev_button slide_button chev-wrap left" id="prev">
-            <button class="chev-btn">
-              <i class="fa-solid fa-chevron-left"></i>
-            </button>
-          </div>
+          <p class="pager">
 
-          <div class="slide_next_button slide_button  chev-wrap right" id="next">
-            <button class="chev-btn">
-              <i class="fa-solid fa-chevron-right"></i>
-            </button>
-          </div>
+          </p>
 
-          <ul class="slide_pagination"></ul>
+     
 
-        </div>
+
+
+
+
+    
 
 
       </div>
